@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[Profile dumpProfile]:Profile.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_sampleArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Profile endSample:]:Profile.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

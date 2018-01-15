@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14176EA21E4964F40050350D /* NoiseTextureMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 14176EA11E4964F40050350D /* NoiseTextureMaker.m */; };
+		14176EA51E49B3600050350D /* Ray.m in Sources */ = {isa = PBXBuildFile; fileRef = 14176EA41E49B3600050350D /* Ray.m */; };
+		141CF0931EF7CB06000FD692 /* RubikElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 141CF0921EF7CB06000FD692 /* RubikElement.m */; };
+		141CF0961EF7E2E8000FD692 /* RubikScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 141CF0951EF7E2E8000FD692 /* RubikScene.m */; };
+		1430391E1EEA731200BF1417 /* Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1430391D1EEA731200BF1417 /* Transform.m */; };
+		145A559F1E1DE755008C94FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A559E1E1DE755008C94FA /* main.m */; };
+		145A55A21E1DE755008C94FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55A11E1DE755008C94FA /* AppDelegate.m */; };
+		145A55A91E1DE755008C94FA /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55A81E1DE755008C94FA /* GameViewController.m */; };
+		145A55AC1E1DE755008C94FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145A55AA1E1DE755008C94FA /* Main.storyboard */; };
+		145A55AE1E1DE755008C94FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145A55AD1E1DE755008C94FA /* Assets.xcassets */; };
+		145A55B11E1DE755008C94FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145A55AF1E1DE755008C94FA /* LaunchScreen.storyboard */; };
+		145A55BD1E1DEB01008C94FA /* EulerAngle.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55BA1E1DEB01008C94FA /* EulerAngle.m */; };
+		145A55BE1E1DEB01008C94FA /* MathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55BC1E1DEB01008C94FA /* MathUtil.m */; };
+		145A55C21E1DEB11008C94FA /* SceneNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55C11E1DEB11008C94FA /* SceneNode.m */; };
+		145A55C81E1DEB24008C94FA /* GeometryMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55C51E1DEB24008C94FA /* GeometryMaker.m */; };
+		145A55C91E1DEB24008C94FA /* GeometryMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55C71E1DEB24008C94FA /* GeometryMesh.m */; };
+		145A55D41E1DEB79008C94FA /* OpenGLShaderLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55CD1E1DEB79008C94FA /* OpenGLShaderLoader.m */; };
+		145A55D51E1DEB79008C94FA /* OpenGLShaderMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55CF1E1DEB79008C94FA /* OpenGLShaderMaker.m */; };
+		145A55D61E1DEB79008C94FA /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55D11E1DEB79008C94FA /* OpenGLView.m */; };
+		145A55D71E1DEB79008C94FA /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A55D31E1DEB79008C94FA /* OpenGLViewController.m */; };
+		148C844C1E1E374500BBA0E9 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148C84471E1E374500BBA0E9 /* LaunchViewController.m */; };
+		148C84511E1E385C00BBA0E9 /* OpenGLMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 148C84501E1E385C00BBA0E9 /* OpenGLMaker.m */; };
+		148C84541E1E413C00BBA0E9 /* GeometryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 148C84531E1E413C00BBA0E9 /* GeometryObject.m */; };
+		148C84561E1E45D300BBA0E9 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 148C84551E1E45D300BBA0E9 /* Shaders */; };
+		14997A091EF8F32B008ABF80 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 14997A081EF8F32B008ABF80 /* Scene.m */; };
+		14997A0C1EF8F435008ABF80 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 14997A0B1EF8F435008ABF80 /* Director.m */; };
+		14997A101EF915BF008ABF80 /* RubikCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 14997A0F1EF915BF008ABF80 /* RubikCube.m */; };
+		14997A131EF91DED008ABF80 /* BoundingVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 14997A121EF91DED008ABF80 /* BoundingVolume.m */; };
+		14997A161EF92312008ABF80 /* RubikTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 14997A151EF92312008ABF80 /* RubikTouch.m */; };
+		149F032E1ED2B84B004F9563 /* PhysicsCollision.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F032D1ED2B84B004F9563 /* PhysicsCollision.m */; };
+		149F03311ED2B972004F9563 /* AxisAlignedBoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F03301ED2B972004F9563 /* AxisAlignedBoundingBox.m */; };
+		149F03341ED2BB10004F9563 /* SphereBoundingVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F03331ED2BB10004F9563 /* SphereBoundingVolume.m */; };
+		149F03371ED2BF58004F9563 /* OrientedBoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F03361ED2BF58004F9563 /* OrientedBoundingBox.m */; };
+		149F033A1ED2CD27004F9563 /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F03391ED2CD27004F9563 /* Plane.m */; };
+		14B73C0B1F134E9500BC9C87 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B73C0A1F134E9500BC9C87 /* Profile.m */; };
+		14B73C0E1F135BDA00BC9C87 /* ProfileSampleHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B73C0D1F135BDA00BC9C87 /* ProfileSampleHistory.m */; };
+		14BC28701FA1924400C71C82 /* GameGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC286F1FA1924400C71C82 /* GameGestureRecognizer.m */; };
+		14BC28731FA1946C00C71C82 /* TapTouchRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC28721FA1946C00C71C82 /* TapTouchRecognizer.m */; };
+		14D45C331EEE9D07001073D3 /* RubikBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D45C321EEE9D07001073D3 /* RubikBlock.m */; };
+		14D5D5551E4823D100B4A097 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D5D5541E4823D100B4A097 /* Camera.m */; };
+		14DF3C681F1348AB002F8EC3 /* ProfileSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DF3C671F1348AB002F8EC3 /* ProfileSample.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14176EA01E4964F40050350D /* NoiseTextureMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoiseTextureMaker.h; path = Math/NoiseTextureMaker.h; sourceTree = "<group>"; };
+		14176EA11E4964F40050350D /* NoiseTextureMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoiseTextureMaker.m; path = Math/NoiseTextureMaker.m; sourceTree = "<group>"; };
+		14176EA31E49B3600050350D /* Ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ray.h; path = Math/Ray.h; sourceTree = "<group>"; };
+		14176EA41E49B3600050350D /* Ray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ray.m; path = Math/Ray.m; sourceTree = "<group>"; };
+		141CF0911EF7CB06000FD692 /* RubikElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubikElement.h; sourceTree = "<group>"; };
+		141CF0921EF7CB06000FD692 /* RubikElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubikElement.m; sourceTree = "<group>"; };
+		141CF0941EF7E2E8000FD692 /* RubikScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubikScene.h; sourceTree = "<group>"; };
+		141CF0951EF7E2E8000FD692 /* RubikScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubikScene.m; sourceTree = "<group>"; };
+		1430391C1EEA731200BF1417 /* Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transform.h; path = Math/Transform.h; sourceTree = "<group>"; };
+		1430391D1EEA731200BF1417 /* Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Transform.m; path = Math/Transform.m; sourceTree = "<group>"; };
+		145A559A1E1DE755008C94FA /* CrazyRubikCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyRubikCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		145A559E1E1DE755008C94FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		145A55A01E1DE755008C94FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		145A55A11E1DE755008C94FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		145A55A71E1DE755008C94FA /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		145A55A81E1DE755008C94FA /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		145A55AB1E1DE755008C94FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		145A55AD1E1DE755008C94FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		145A55B01E1DE755008C94FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		145A55B21E1DE755008C94FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145A55B91E1DEB01008C94FA /* EulerAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EulerAngle.h; path = Math/EulerAngle.h; sourceTree = "<group>"; };
+		145A55BA1E1DEB01008C94FA /* EulerAngle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EulerAngle.m; path = Math/EulerAngle.m; sourceTree = "<group>"; };
+		145A55BB1E1DEB01008C94FA /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MathUtil.h; path = Math/MathUtil.h; sourceTree = "<group>"; };
+		145A55BC1E1DEB01008C94FA /* MathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MathUtil.m; path = Math/MathUtil.m; sourceTree = "<group>"; };
+		145A55C01E1DEB11008C94FA /* SceneNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNode.h; path = Scene/SceneNode.h; sourceTree = "<group>"; };
+		145A55C11E1DEB11008C94FA /* SceneNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SceneNode.m; path = Scene/SceneNode.m; sourceTree = "<group>"; };
+		145A55C41E1DEB24008C94FA /* GeometryMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeometryMaker.h; path = Geometry/GeometryMaker.h; sourceTree = "<group>"; };
+		145A55C51E1DEB24008C94FA /* GeometryMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeometryMaker.m; path = Geometry/GeometryMaker.m; sourceTree = "<group>"; };
+		145A55C61E1DEB24008C94FA /* GeometryMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeometryMesh.h; path = Geometry/GeometryMesh.h; sourceTree = "<group>"; };
+		145A55C71E1DEB24008C94FA /* GeometryMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeometryMesh.m; path = Geometry/GeometryMesh.m; sourceTree = "<group>"; };
+		145A55CC1E1DEB79008C94FA /* OpenGLShaderLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLShaderLoader.h; path = OpenGL/OpenGLShaderLoader.h; sourceTree = "<group>"; };
+		145A55CD1E1DEB79008C94FA /* OpenGLShaderLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLShaderLoader.m; path = OpenGL/OpenGLShaderLoader.m; sourceTree = "<group>"; };
+		145A55CE1E1DEB79008C94FA /* OpenGLShaderMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLShaderMaker.h; path = OpenGL/OpenGLShaderMaker.h; sourceTree = "<group>"; };
+		145A55CF1E1DEB79008C94FA /* OpenGLShaderMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLShaderMaker.m; path = OpenGL/OpenGLShaderMaker.m; sourceTree = "<group>"; };
+		145A55D01E1DEB79008C94FA /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLView.h; path = OpenGL/OpenGLView.h; sourceTree = "<group>"; };
+		145A55D11E1DEB79008C94FA /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLView.m; path = OpenGL/OpenGLView.m; sourceTree = "<group>"; };
+		145A55D21E1DEB79008C94FA /* OpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLViewController.h; path = OpenGL/OpenGLViewController.h; sourceTree = "<group>"; };
+		145A55D31E1DEB79008C94FA /* OpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLViewController.m; path = OpenGL/OpenGLViewController.m; sourceTree = "<group>"; };
+		148C84461E1E374500BBA0E9 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		148C84471E1E374500BBA0E9 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		148C844F1E1E385C00BBA0E9 /* OpenGLMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLMaker.h; sourceTree = "<group>"; };
+		148C84501E1E385C00BBA0E9 /* OpenGLMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLMaker.m; sourceTree = "<group>"; };
+		148C84521E1E413C00BBA0E9 /* GeometryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeometryObject.h; path = Geometry/GeometryObject.h; sourceTree = "<group>"; };
+		148C84531E1E413C00BBA0E9 /* GeometryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeometryObject.m; path = Geometry/GeometryObject.m; sourceTree = "<group>"; };
+		148C84551E1E45D300BBA0E9 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shaders; path = CrazyRubikCube/Shaders; sourceTree = "<group>"; };
+		14997A071EF8F32B008ABF80 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scene.h; path = Scene/Scene.h; sourceTree = "<group>"; };
+		14997A081EF8F32B008ABF80 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Scene.m; path = Scene/Scene.m; sourceTree = "<group>"; };
+		14997A0A1EF8F435008ABF80 /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Director.h; path = Scene/Director.h; sourceTree = "<group>"; };
+		14997A0B1EF8F435008ABF80 /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Director.m; path = Scene/Director.m; sourceTree = "<group>"; };
+		14997A0D1EF90936008ABF80 /* RubikTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikTypes.h; sourceTree = "<group>"; };
+		14997A0E1EF915BF008ABF80 /* RubikCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubikCube.h; sourceTree = "<group>"; };
+		14997A0F1EF915BF008ABF80 /* RubikCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubikCube.m; sourceTree = "<group>"; };
+		14997A111EF91DED008ABF80 /* BoundingVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoundingVolume.h; path = Math/BoundingVolume.h; sourceTree = "<group>"; };
+		14997A121EF91DED008ABF80 /* BoundingVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoundingVolume.m; path = Math/BoundingVolume.m; sourceTree = "<group>"; };
+		14997A141EF92312008ABF80 /* RubikTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubikTouch.h; sourceTree = "<group>"; };
+		14997A151EF92312008ABF80 /* RubikTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubikTouch.m; sourceTree = "<group>"; };
+		149F032C1ED2B84B004F9563 /* PhysicsCollision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicsCollision.h; path = Math/PhysicsCollision.h; sourceTree = "<group>"; };
+		149F032D1ED2B84B004F9563 /* PhysicsCollision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhysicsCollision.m; path = Math/PhysicsCollision.m; sourceTree = "<group>"; };
+		149F032F1ED2B972004F9563 /* AxisAlignedBoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AxisAlignedBoundingBox.h; path = Math/AxisAlignedBoundingBox.h; sourceTree = "<group>"; };
+		149F03301ED2B972004F9563 /* AxisAlignedBoundingBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AxisAlignedBoundingBox.m; path = Math/AxisAlignedBoundingBox.m; sourceTree = "<group>"; };
+		149F03321ED2BB10004F9563 /* SphereBoundingVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SphereBoundingVolume.h; path = Math/SphereBoundingVolume.h; sourceTree = "<group>"; };
+		149F03331ED2BB10004F9563 /* SphereBoundingVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SphereBoundingVolume.m; path = Math/SphereBoundingVolume.m; sourceTree = "<group>"; };
+		149F03351ED2BF58004F9563 /* OrientedBoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrientedBoundingBox.h; path = Math/OrientedBoundingBox.h; sourceTree = "<group>"; };
+		149F03361ED2BF58004F9563 /* OrientedBoundingBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrientedBoundingBox.m; path = Math/OrientedBoundingBox.m; sourceTree = "<group>"; };
+		149F03381ED2CD27004F9563 /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plane.h; path = Math/Plane.h; sourceTree = "<group>"; };
+		149F03391ED2CD27004F9563 /* Plane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plane.m; path = Math/Plane.m; sourceTree = "<group>"; };
+		14B73C091F134E9500BC9C87 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Profile.h; path = Profile/Profile.h; sourceTree = "<group>"; };
+		14B73C0A1F134E9500BC9C87 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Profile.m; path = Profile/Profile.m; sourceTree = "<group>"; };
+		14B73C0C1F135BDA00BC9C87 /* ProfileSampleHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileSampleHistory.h; path = Profile/ProfileSampleHistory.h; sourceTree = "<group>"; };
+		14B73C0D1F135BDA00BC9C87 /* ProfileSampleHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileSampleHistory.m; path = Profile/ProfileSampleHistory.m; sourceTree = "<group>"; };
+		14BC286E1FA1924400C71C82 /* GameGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameGestureRecognizer.h; path = Touch/GameGestureRecognizer.h; sourceTree = "<group>"; };
+		14BC286F1FA1924400C71C82 /* GameGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GameGestureRecognizer.m; path = Touch/GameGestureRecognizer.m; sourceTree = "<group>"; };
+		14BC28711FA1946C00C71C82 /* TapTouchRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TapTouchRecognizer.h; path = Touch/TapTouchRecognizer.h; sourceTree = "<group>"; };
+		14BC28721FA1946C00C71C82 /* TapTouchRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TapTouchRecognizer.m; path = Touch/TapTouchRecognizer.m; sourceTree = "<group>"; };
+		14D45C311EEE9D07001073D3 /* RubikBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubikBlock.h; sourceTree = "<group>"; };
+		14D45C321EEE9D07001073D3 /* RubikBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubikBlock.m; sourceTree = "<group>"; };
+		14D5D5531E4823D100B4A097 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		14D5D5541E4823D100B4A097 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		14DF3C661F1348AB002F8EC3 /* ProfileSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileSample.h; path = Profile/ProfileSample.h; sourceTree = "<group>"; };
+		14DF3C671F1348AB002F8EC3 /* ProfileSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileSample.m; path = Profile/ProfileSample.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		145A55971E1DE754008C94FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		145A55911E1DE754008C94FA = {
+			isa = PBXGroup;
+			children = (
+				145A559C1E1DE755008C94FA /* CrazyRubikCube */,
+				148C84551E1E45D300BBA0E9 /* Shaders */,
+				145A559B1E1DE755008C94FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		145A559B1E1DE755008C94FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				145A559A1E1DE755008C94FA /* CrazyRubikCube.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		145A559C1E1DE755008C94FA /* CrazyRubikCube */ = {
+			isa = PBXGroup;
+			children = (
+				148C844F1E1E385C00BBA0E9 /* OpenGLMaker.h */,
+				148C84501E1E385C00BBA0E9 /* OpenGLMaker.m */,
+				14D5D5531E4823D100B4A097 /* Camera.h */,
+				14D5D5541E4823D100B4A097 /* Camera.m */,
+				14D45C341EEE9DC2001073D3 /* Rubik */,
+				14DF3C651F134873002F8EC3 /* Profile */,
+				145A55CB1E1DEB6C008C94FA /* OpenGL */,
+				145A55C31E1DEB17008C94FA /* Geometry */,
+				145A55BF1E1DEB04008C94FA /* Scene */,
+				14BC286A1FA191BF00C71C82 /* Touch */,
+				145A55B81E1DEAF5008C94FA /* Math */,
+				145A55A01E1DE755008C94FA /* AppDelegate.h */,
+				145A55A11E1DE755008C94FA /* AppDelegate.m */,
+				148C84461E1E374500BBA0E9 /* LaunchViewController.h */,
+				148C84471E1E374500BBA0E9 /* LaunchViewController.m */,
+				145A55A71E1DE755008C94FA /* GameViewController.h */,
+				145A55A81E1DE755008C94FA /* GameViewController.m */,
+				145A55AA1E1DE755008C94FA /* Main.storyboard */,
+				145A55AD1E1DE755008C94FA /* Assets.xcassets */,
+				145A55AF1E1DE755008C94FA /* LaunchScreen.storyboard */,
+				145A55B21E1DE755008C94FA /* Info.plist */,
+				145A559D1E1DE755008C94FA /* Supporting Files */,
+			);
+			path = CrazyRubikCube;
+			sourceTree = "<group>";
+		};
+		145A559D1E1DE755008C94FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				145A559E1E1DE755008C94FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		145A55B81E1DEAF5008C94FA /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				145A55B91E1DEB01008C94FA /* EulerAngle.h */,
+				145A55BA1E1DEB01008C94FA /* EulerAngle.m */,
+				1430391C1EEA731200BF1417 /* Transform.h */,
+				1430391D1EEA731200BF1417 /* Transform.m */,
+				145A55BB1E1DEB01008C94FA /* MathUtil.h */,
+				145A55BC1E1DEB01008C94FA /* MathUtil.m */,
+				14176EA01E4964F40050350D /* NoiseTextureMaker.h */,
+				14176EA11E4964F40050350D /* NoiseTextureMaker.m */,
+				149F032C1ED2B84B004F9563 /* PhysicsCollision.h */,
+				149F032D1ED2B84B004F9563 /* PhysicsCollision.m */,
+				14176EA31E49B3600050350D /* Ray.h */,
+				14176EA41E49B3600050350D /* Ray.m */,
+				14997A111EF91DED008ABF80 /* BoundingVolume.h */,
+				14997A121EF91DED008ABF80 /* BoundingVolume.m */,
+				149F032F1ED2B972004F9563 /* AxisAlignedBoundingBox.h */,
+				149F03301ED2B972004F9563 /* AxisAlignedBoundingBox.m */,
+				149F03321ED2BB10004F9563 /* SphereBoundingVolume.h */,
+				149F03331ED2BB10004F9563 /* SphereBoundingVolume.m */,
+				149F03351ED2BF58004F9563 /* OrientedBoundingBox.h */,
+				149F03361ED2BF58004F9563 /* OrientedBoundingBox.m */,
+				149F03381ED2CD27004F9563 /* Plane.h */,
+				149F03391ED2CD27004F9563 /* Plane.m */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		145A55BF1E1DEB04008C94FA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				145A55C01E1DEB11008C94FA /* SceneNode.h */,
+				145A55C11E1DEB11008C94FA /* SceneNode.m */,
+				14997A071EF8F32B008ABF80 /* Scene.h */,
+				14997A081EF8F32B008ABF80 /* Scene.m */,
+				14997A0A1EF8F435008ABF80 /* Director.h */,
+				14997A0B1EF8F435008ABF80 /* Director.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		145A55C31E1DEB17008C94FA /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				145A55C41E1DEB24008C94FA /* GeometryMaker.h */,
+				145A55C51E1DEB24008C94FA /* GeometryMaker.m */,
+				145A55C61E1DEB24008C94FA /* GeometryMesh.h */,
+				145A55C71E1DEB24008C94FA /* GeometryMesh.m */,
+				148C84521E1E413C00BBA0E9 /* GeometryObject.h */,
+				148C84531E1E413C00BBA0E9 /* GeometryObject.m */,
+			);
+			name = Geometry;
+			sourceTree = "<group>";
+		};
+		145A55CB1E1DEB6C008C94FA /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				145A55CC1E1DEB79008C94FA /* OpenGLShaderLoader.h */,
+				145A55CD1E1DEB79008C94FA /* OpenGLShaderLoader.m */,
+				145A55CE1E1DEB79008C94FA /* OpenGLShaderMaker.h */,
+				145A55CF1E1DEB79008C94FA /* OpenGLShaderMaker.m */,
+				145A55D01E1DEB79008C94FA /* OpenGLView.h */,
+				145A55D11E1DEB79008C94FA /* OpenGLView.m */,
+				145A55D21E1DEB79008C94FA /* OpenGLViewController.h */,
+				145A55D31E1DEB79008C94FA /* OpenGLViewController.m */,
+			);
+			name = OpenGL;
+			sourceTree = "<group>";
+		};
+		14BC286A1FA191BF00C71C82 /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				14BC286E1FA1924400C71C82 /* GameGestureRecognizer.h */,
+				14BC286F1FA1924400C71C82 /* GameGestureRecognizer.m */,
+				14BC28711FA1946C00C71C82 /* TapTouchRecognizer.h */,
+				14BC28721FA1946C00C71C82 /* TapTouchRecognizer.m */,
+			);
+			name = Touch;
+			sourceTree = "<group>";
+		};
+		14D45C341EEE9DC2001073D3 /* Rubik */ = {
+			isa = PBXGroup;
+			children = (
+				14997A0D1EF90936008ABF80 /* RubikTypes.h */,
+				141CF0941EF7E2E8000FD692 /* RubikScene.h */,
+				141CF0951EF7E2E8000FD692 /* RubikScene.m */,
+				141CF0911EF7CB06000FD692 /* RubikElement.h */,
+				141CF0921EF7CB06000FD692 /* RubikElement.m */,
+				14D45C311EEE9D07001073D3 /* RubikBlock.h */,
+				14D45C321EEE9D07001073D3 /* RubikBlock.m */,
+				14997A0E1EF915BF008ABF80 /* RubikCube.h */,
+				14997A0F1EF915BF008ABF80 /* RubikCube.m */,
+				14997A141EF92312008ABF80 /* RubikTouch.h */,
+				14997A151EF92312008ABF80 /* RubikTouch.m */,
+			);
+			name = Rubik;
+			sourceTree = "<group>";
+		};
+		14DF3C651F134873002F8EC3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				14B73C0C1F135BDA00BC9C87 /* ProfileSampleHistory.h */,
+				14B73C0D1F135BDA00BC9C87 /* ProfileSampleHistory.m */,
+				14DF3C661F1348AB002F8EC3 /* ProfileSample.h */,
+				14DF3C671F1348AB002F8EC3 /* ProfileSample.m */,
+				14B73C091F134E9500BC9C87 /* Profile.h */,
+				14B73C0A1F134E9500BC9C87 /* Profile.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		145A55991E1DE754008C94FA /* CrazyRubikCube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145A55B51E1DE755008C94FA /* Build configuration list for PBXNativeTarget "CrazyRubikCube" */;
+			buildPhases = (
+				145A55961E1DE754008C94FA /* Sources */,
+				145A55971E1DE754008C94FA /* Frameworks */,
+				145A55981E1DE754008C94FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrazyRubikCube;
+			productName = CrazyRubikCube;
+			productReference = 145A559A1E1DE755008C94FA /* CrazyRubikCube.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		145A55921E1DE754008C94FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = SangDesu;
+				TargetAttributes = {
+					145A55991E1DE754008C94FA = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = P5QERNN666;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 145A55951E1DE754008C94FA /* Build configuration list for PBXProject "CrazyRubikCube" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 145A55911E1DE754008C94FA;
+			productRefGroup = 145A559B1E1DE755008C94FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				145A55991E1DE754008C94FA /* CrazyRubikCube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		145A55981E1DE754008C94FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145A55AC1E1DE755008C94FA /* Main.storyboard in Resources */,
+				145A55AE1E1DE755008C94FA /* Assets.xcassets in Resources */,
+				148C84561E1E45D300BBA0E9 /* Shaders in Resources */,
+				145A55B11E1DE755008C94FA /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		145A55961E1DE754008C94FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BC28701FA1924400C71C82 /* GameGestureRecognizer.m in Sources */,
+				149F033A1ED2CD27004F9563 /* Plane.m in Sources */,
+				14997A161EF92312008ABF80 /* RubikTouch.m in Sources */,
+				14997A0C1EF8F435008ABF80 /* Director.m in Sources */,
+				14176EA51E49B3600050350D /* Ray.m in Sources */,
+				145A55D51E1DEB79008C94FA /* OpenGLShaderMaker.m in Sources */,
+				14997A131EF91DED008ABF80 /* BoundingVolume.m in Sources */,
+				149F03311ED2B972004F9563 /* AxisAlignedBoundingBox.m in Sources */,
+				149F032E1ED2B84B004F9563 /* PhysicsCollision.m in Sources */,
+				145A55D71E1DEB79008C94FA /* OpenGLViewController.m in Sources */,
+				141CF0961EF7E2E8000FD692 /* RubikScene.m in Sources */,
+				145A55A21E1DE755008C94FA /* AppDelegate.m in Sources */,
+				148C844C1E1E374500BBA0E9 /* LaunchViewController.m in Sources */,
+				14D5D5551E4823D100B4A097 /* Camera.m in Sources */,
+				145A55A91E1DE755008C94FA /* GameViewController.m in Sources */,
+				145A55C91E1DEB24008C94FA /* GeometryMesh.m in Sources */,
+				141CF0931EF7CB06000FD692 /* RubikElement.m in Sources */,
+				14D45C331EEE9D07001073D3 /* RubikBlock.m in Sources */,
+				1430391E1EEA731200BF1417 /* Transform.m in Sources */,
+				149F03371ED2BF58004F9563 /* OrientedBoundingBox.m in Sources */,
+				14B73C0B1F134E9500BC9C87 /* Profile.m in Sources */,
+				145A55C21E1DEB11008C94FA /* SceneNode.m in Sources */,
+				145A55D41E1DEB79008C94FA /* OpenGLShaderLoader.m in Sources */,
+				148C84541E1E413C00BBA0E9 /* GeometryObject.m in Sources */,
+				145A559F1E1DE755008C94FA /* main.m in Sources */,
+				14176EA21E4964F40050350D /* NoiseTextureMaker.m in Sources */,
+				145A55D61E1DEB79008C94FA /* OpenGLView.m in Sources */,
+				149F03341ED2BB10004F9563 /* SphereBoundingVolume.m in Sources */,
+				14997A101EF915BF008ABF80 /* RubikCube.m in Sources */,
+				14B73C0E1F135BDA00BC9C87 /* ProfileSampleHistory.m in Sources */,
+				145A55BD1E1DEB01008C94FA /* EulerAngle.m in Sources */,
+				14997A091EF8F32B008ABF80 /* Scene.m in Sources */,
+				148C84511E1E385C00BBA0E9 /* OpenGLMaker.m in Sources */,
+				14DF3C681F1348AB002F8EC3 /* ProfileSample.m in Sources */,
+				145A55BE1E1DEB01008C94FA /* MathUtil.m in Sources */,
+				145A55C81E1DEB24008C94FA /* GeometryMaker.m in Sources */,
+				14BC28731FA1946C00C71C82 /* TapTouchRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		145A55AA1E1DE755008C94FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145A55AB1E1DE755008C94FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		145A55AF1E1DE755008C94FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145A55B01E1DE755008C94FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		145A55B31E1DE755008C94FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		145A55B41E1DE755008C94FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		145A55B61E1DE755008C94FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = P5QERNN666;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"ENABLE_PROFILE=1",
+					"$(inherited)",
+					"PLATFORM_TARGET_MAC=1",
+				);
+				INFOPLIST_FILE = CrazyRubikCube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangdesu.CrazyRubikCube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		145A55B71E1DE755008C94FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				DEVELOPMENT_TEAM = P5QERNN666;
+				GCC_PREPROCESSOR_DEFINITIONS = "PLATFORM_TARGET_MAC=1";
+				INFOPLIST_FILE = CrazyRubikCube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangdesu.CrazyRubikCube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		145A55951E1DE754008C94FA /* Build configuration list for PBXProject "CrazyRubikCube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145A55B31E1DE755008C94FA /* Debug */,
+				145A55B41E1DE755008C94FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		145A55B51E1DE755008C94FA /* Build configuration list for PBXNativeTarget "CrazyRubikCube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145A55B61E1DE755008C94FA /* Debug */,
+				145A55B71E1DE755008C94FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 145A55921E1DE754008C94FA /* Project object */;
+}
